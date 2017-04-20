@@ -13,5 +13,8 @@ setup(
     author='Sergey Fedotov (seamus-45)',
     author_email='sr.fido@gmail.com',
     url='https://github.com/seamus-45/openfire-restapi',
-    packages=['ofrestapi']
+    packages=['ofrestapi'],
+    install_requires=[
+        'requests==2.12.5'
+    ]
 )
