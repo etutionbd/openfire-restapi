@@ -15,6 +15,6 @@ setup(
     url='https://github.com/seamus-45/openfire-restapi',
     packages=['ofrestapi'],
     install_requires=[
-        'requests==2.12.5'
+        'requests'
     ]
 )

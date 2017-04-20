@@ -1,1 +1,0 @@
-/Volumes/Data/work/spa/etutionbd-backend/.venv/lib/python3.6/site-packages/openfire_restapi-0.1.1-py3.6.egg
