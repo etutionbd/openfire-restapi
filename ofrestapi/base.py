@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from exception import (IllegalArgumentException, UserNotFoundException, UserAlreadyExistsException,
+from .exception import (IllegalArgumentException, UserNotFoundException, UserAlreadyExistsException,
                        RequestNotAuthorisedException, UserServiceDisabledException,
                        SharedGroupException, InvalidResponseException, PropertyNotFoundException,
                        GroupAlreadyExistsException, GroupNotFoundException, RoomNotFoundException,
@@ -48,8 +48,10 @@ class Base(object):
         r = func(
             headers=self.headers,
             url=self.host + endpoint,
+            verify=False,
             **kwargs
         )
+        print(r.text)
         if r.status_code in (200, 201):
             try:
                 return r.json()
